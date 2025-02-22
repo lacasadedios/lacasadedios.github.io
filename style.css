@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*carousel y derivados*/
+.carousel-item{
+    min-height: 400px;
+}
+
+.carousel-caption{
+    
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-item img{
+    height: 650px;
+}
+.carousel-caption h5{
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.carousel-caption h3{
+    text-align: center;
+    font-size: 50px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.info h1{
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.info h1 span{
+    color: #007bff;
+}
+
+.info p{
+    text-align: center;
+    font-size: 20px;
+    color: #000000;
+}
+
+.event{
+    padding: 80px 0;
+}
+
+.bg-car1{
+    background-image: linear-gradient(
+        rgba(49, 49, 49, 0.5),
+        rgba(49, 49, 49, 0.5)
+    ),url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-car2{
+    background-image: linear-gradient(
+        rgba(49, 49, 49, 0.5),
+        rgba(49, 49, 49, 0.5)
+    ),url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-car3{
+    background-image: linear-gradient(
+        rgba(49, 49, 49, 0.5),
+        rgba(49, 49, 49, 0.5)
+    ),url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-icons i {
+    font-size: 40px;
+}
+
+.box-icons h3{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según necesites */
+    background-image: url(/img/banner_girado.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece la imagen para que el texto resalte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner h1{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner h1 img{
+    color: #007bff;
+}
+
+.banner p{
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+
+.map {
+    text-align: center;
+    background: #f8f9fa; /* Fondo sutil */
+    padding: 40px 20px;
+}
+
+.map h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map h2 span {
+    color: #007bff; /* Resalta "Casa de Dios" en azul */
+}
+
+.map p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
+
+.reuniones {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.reuniones h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 15px auto;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card i {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.especial {
+    background: #ffcc00;
+}
+
+
+/* Estilos generales para la sección de redes y noticias */
+.event-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+/* Tarjetas específicas de la sección */
+.event-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.event-card-body {
+    width: 100%;
+}
+
+/* Títulos */
+.event-title {
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Texto dentro de la tarjeta */
+.event-card-body p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Botones específicos de la sección */
+.event-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    max-width: 200px;
+}
+
+.event-btn.primary {
+    background: #007bff;
+    color: white;
+    border: none;
+}
+
+.event-btn.primary:hover {
+    background: #0056b3;
+}
+
+/* Lista de noticias */
+.event-news ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+}
+
+.event-news ul li {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.event-news ul li strong {
+    margin-left: 5px;
+}
+
+.calendario {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.calendario h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendario p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.table {
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.table td {
+    height: 150px;
+    vertical-align: middle;
+}
+
+.evento {
+    background: #eef4ff;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.evento i {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+
+/* Estilos para la vista móvil */
+.lista-eventos {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dia {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 5px solid #007bff;
+    background: #eef4ff;
+    border-radius: 5px;
+}
+
+.dia h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.dia .evento {
+    background: none;
+    box-shadow: none;
+    padding: 5px;
+}
+
+
+
+@media(max-width:767px){
+    .carousel-item{
+        min-height: 500px;
+    }
+    .carousel-item img{
+        height: 500px;
+    }
+    .carousel-caption{
+        bottom: 30px;
+    }
+    .carousel-caption h5{
+        font-size: 50px;
+        margin-top: 0;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .info{
+        min-height: 10px;
+    }
+    .services{
+        padding: 30px 0;
+    }
+    .banner{
+        margin-bottom: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .event-card {
+        margin-bottom: 20px;
+    }
+}
