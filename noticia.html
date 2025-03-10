@@ -40,8 +40,11 @@
                     let newsHTML = `
                         <h2 class="text-center">${title}</h2>
                         <p class="text-muted text-center"><i class="bi bi-calendar"></i> ${date}</p>
-                        <img src="${image.trim()}" width="100% "class="card-img-top" alt="${title}">
                         <p>${content}</p>
+                        <img src="${image.trim()}" width="100% "class="card-img-top" alt="${title}">
+                        <figcaption class="blockquote-footer">
+                            Escrito y publicado por <cite title="Source Title">Iglesia Casa de Dios</cite>
+                        </figcaption>
                     `;
 
                     document.getElementById("newsContent").innerHTML = newsHTML;
