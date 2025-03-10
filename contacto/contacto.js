@@ -8,7 +8,7 @@ document.getElementById("formContacto").addEventListener("submit", async functio
     };
 
     try {
-        const respuesta = await fetch("https://script.google.com/macros/s/AKfycby3oQSkKgVd_p_zLHeKgGVlC02TqJcmTi4ZP02NMZmUd7PYamM1UunWLk83edkKva6m/exec", {
+        const respuesta = await fetch("https://script.google.com/macros/s/AKfycbwo8vaKHF-6jR8mdRXH35HGUP1hLXsyEC_yQlg_kFnxqBHFE9pA0oyKUG8l8bAfSkOQ/exec", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(formData),
