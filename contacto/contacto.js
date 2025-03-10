@@ -24,6 +24,7 @@ document.getElementById("formContacto").addEventListener("submit", async functio
         }
     } catch (error) {
         console.error("Error:", error);
-        alert("Hubo un problema al enviar el mensaje.");
+        alert("Hubo un gran problema al enviar el mensaje.");
     }
 });
+
